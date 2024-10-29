@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.column-image{
+    display: none;
+}
+.container .column1{
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+    text-align: left;
+    background-color: hsl(0, 27%, 94%);
+}
+.container .column1 .column1-row1{
+    display: grid;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.container .column1 .column1-row2{
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+}
+.container .column1 .column1-row2 h1{
+    color: hsl(0, 36%, 70%);
+    font-size: 90px;
+    margin-right: 140px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.container .column1 .column1-row2 h1 span{
+    color: black;
+}
+.container .column1 .column1-row2 p{
+    margin-top: 30px;
+    margin-right: 200px;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    color: hsl(0, 93%, 68%);
+    margin-bottom: 40px;
+}
+.container .column1 .column1-row2 label input{
+    width: 450px;
+    height: 60px; 
+    position: relative;
+    border-radius: 50px;
+    border: none;
+    border: 1px rgba(128, 128, 128, 0.548) solid;
+}
+.container .column1 .column1-row2 label input::placeholder{
+    padding-left: 20px;
+    color: rgba(128, 128, 128, 0.544);
+    font-weight: 600;
+}
+.container .column1 .column1-row2 button{
+    width: 100px;
+    height: 62px;
+    border: none;
+    background-color: hsl(0, 73%, 71%);
+    border-radius: 50px;
+    position: absolute;
+    top: 635px;
+    left: 485px;
+}
+.container .column1 .column1-row2 button a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+    }
+    .container{
+        display: grid;
+        place-content: center;
+    }
+    .container .column1{
+        width: 375px;
+        height: 750px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .column1 .column1-row1{
+        margin-left: 20px;
+        height: 60px;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .container .column1 .column1-row1 img{
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .container .column1 .column1-row2{
+        text-align: center;
+        margin: 0;
+        margin-left: 85px;
+        margin-top: 50px;
+        padding: 0;
+    }
+    .container .column1 .column1-row2 h1{
+        font-size: 40px;
+        font-weight: 500;
+        width: 200px;
+
+    }
+    .container .column1 .column1-row2 p{
+        width: 300px;
+        font-size: 14px;
+        margin-left: -40px;
+    }
+    .container .column1 .column1-row2 label input{
+        width: 330px;
+        margin-left: -260px;
+    }
+    .container .column1 .column1-row2 button{
+        position: absolute;
+        top: 684px;
+        left: 313px;
+    }
+    .container .column1 .column-image{
+        display: block;
+    }
+    .column2 img{
+        display: none;
+    }
+}
